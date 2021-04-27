@@ -1,0 +1,176 @@
+@font-face{
+    src:url("./BMJUA_ttf.ttf");
+    font-family: "jua";
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "jua";
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background: #7fe4dd;
+    height: 50px;
+    position:sticky;
+    top:0px;
+    z-index:100;
+}
+
+.main__header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 15px;
+}
+
+.header-title{
+    width: 90px;
+}
+
+.header-KNU-logo{
+    width: 50px;
+}
+
+.main__main{
+    background: #4CCFC76B;
+    margin:2%;
+    border-radius: 20px;
+    
+}
+
+.main__main-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:3%;
+}
+
+.main-title{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.main-subtitle{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main-ricelogo{
+    padding:2% 0;
+    width: 150px;
+}
+
+.main-menu{
+    display: flex;
+    font-size: 24px;
+}
+
+.main-text-blank{
+    width: 100px;
+    border-radius: 5px;
+    background: #FFC0C0;
+    margin:0 5px;
+    text-align: center;
+}
+
+.main-rand-btn{
+    outline: 0;
+    background: none;
+    border: none;
+    margin-top:15px;
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.main-setting{
+    outline: 0;
+    background: none;
+    border: none;
+    margin-top:15px;
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.main-options{
+    visibility:hidden;
+    margin-top:10px;
+    height: 13%;
+    width: 650px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding:5px 0;
+}
+
+.main-option{
+    line-height: 25px;
+    width: 100px;
+}
+
+.main-check{
+    margin-right: 5px;
+}
+
+.verticalLine{
+    border-left: 1px solid black;
+}
+
+.main-goDown{
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.down-text{
+    margin-bottom: 5px;
+}
+
+.main__restorant{
+    background: rgba(255, 192, 192, 0.5);
+    margin:2%;
+    border-radius: 20px;
+}
+
+.map-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* padding-bottom: 10px; */
+}
+
+.map{
+    border-radius: 10px;
+}
+
+.map-content-box{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-content-box>p{
+    padding:5px 0;
+}
