@@ -2,20 +2,20 @@
 <html>
 <head>
     <title>오늘 뭐 먹지?(경북대ver.)</title>
-    <link rel="icon" href="../img/rice.svg">
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="icon" href="./img/rice.svg">
+    <link rel="stylesheet" href="./src/main.css"/>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=SECRET_API_KEY&libraries=services"></script>
     <script src="https://kit.fontawesome.com/1ea5258735.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="./data.js"></script>
+    <script src="./src/data.js"></script>
 </head>
 <body  id="top">
     <header>
         <div class="main__header-wrapper">
             <a href="#top">
-                <img src="../img/mainlogo.png" alt="main-logo" class="header-title">
+                <img src="./img/mainlogo.png" alt="main-logo" class="header-title">
             </a>
-            <img src="../img/KNUlogo.png" class="header-KNU-logo" alt="KNU logo"/>
+            <img src="./img/KNUlogo.png" class="header-KNU-logo" alt="KNU logo"/>
         </div>
     </header>
     <!-- 랜덤 음식 추천 페이지(main) -->
@@ -23,7 +23,7 @@
         <div class="main__main-wrapper">
             <div class="main-title">오늘 뭐 먹지?</div>
             <div class="main-subtitle">경북대학교ver.</div>
-            <img src="../img/rice.svg" class="main-ricelogo" alt="rice"/>
+            <img src="./img/rice.svg" class="main-ricelogo" alt="rice"/>
             <div class="main-menu">
                 <span class="main-text">오늘의 추천 메뉴는 </span>
                 <div class="main-text-blank" id="text-blank"></div>
@@ -62,7 +62,7 @@
     <section class="main__restorant" id="main__restorant">
         <div class="map-box" id="map-box"></div>
     </section>
-    <script src="map.js"></script>
-    <script src="main.js"></script>
+    <script src="./src/map.js"></script>
+    <script src="./src/main.js"></script>
 </body>
 </html>
