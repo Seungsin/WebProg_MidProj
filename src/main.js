@@ -47,7 +47,7 @@ function rand(min, max) {
 
 function pos_change(value, id){
     let isCheck = document.getElementById(value);
-    if($(isCheck).prop("checked")){
+    if(isCheck.checked===true){
         pos_count++;
         pos_check[id]=1;
     }else{
