@@ -64,7 +64,7 @@ function pos_change(value, id){
 
 function menu_change(value, name){
     let isCheck = document.getElementById(value);
-    if($(isCheck).prop("checked")){
+    if(isCheck.checked===true){
         menu_count++;
         menu_rulet.push(name);
     }else{
