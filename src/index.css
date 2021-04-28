@@ -86,9 +86,9 @@ header{
 }
 
 .food-potos>img{
-    width: 100px;
-    height: 100px;
-    margin:7% 2%;
+    width: 150px;
+    height: 150px;
+    margin:5% 2%;
 }
 .rice-des{
     font-size:8px;

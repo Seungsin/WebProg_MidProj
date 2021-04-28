@@ -103,7 +103,8 @@ header{
 }
 
 .main-text-blank{
-    width: 100px;
+    min-width: 100px;
+    max-width: 150px;
     border-radius: 5px;
     background: #FFC0C0;
     margin:0 5px;
