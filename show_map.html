@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>오늘 뭐 먹지?(경북대ver.)</title>
+    <link rel="icon" href="./img/rice.svg">
+    <link rel="stylesheet" href="./src/main.css"/>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6f1317a51d1f3efb18250d786e7ef107&libraries=services"></script>
+    <script src="https://kit.fontawesome.com/1ea5258735.js" crossorigin="anonymous"></script>
+    <script src="./src/data.js"></script>
+</head>
+<body  id="top">
+    <header>
+        <div class="main__header-wrapper">
+            <div class="header-left">
+                <a href="./index.html">
+                    <img src="./img/mainlogo.png" alt="main-logo" class="header-title">
+                </a>
+                <a href="./recom.html"><div>
+                    메뉴 추천 받기
+                </div></a>
+                <div class="verticalLine"></div>
+                <a href="./show_map.html"><div>
+                    식당 지도 모두 보기
+                </div></a>
+            </div>
+            <img src="./img/KNUlogo.png" class="header-KNU-logo" alt="KNU logo"/>
+        </div>
+    </header>
+    <div class="go-top-btn">
+        <a href="#top">
+            <i class="fas fa-caret-square-up fa-2x"></i>
+        </a>
+    </div>
+    <!-- 랜덤 음식 추천 페이지(main) -->
+    <section class="main__main">
+        <div class="main__main-wrapper">
+            <div class="main-title">오늘 뭐 먹지?</div>
+            <div class="main-subtitle">경북대학교ver.</div>
+            
+            <button class="main-rand-btn"  onclick="recommand()">지도 보기</button>
+            <button class="main-setting" onclick="showOption()">옵션 설정</button>
+            <div class="main-options" id="main-options">
+                <div class="main-option">
+                    <p><input type="radio" name="gate" onchange="pos_change(0)" class="main-check" id="mainG" checked>정문/쪽문</p>
+                    <p><input type="radio" name="gate" onchange="pos_change(1)" class="main-check" id="northG">북문</p>
+                    <p><input type="radio" name="gate" onchange="pos_change(2)" class="main-check" id="eastG">동문</p>
+                </div>
+                <div class="verticalLine"></div>
+                <div class="main-option">
+                    <p><input type="radio" name="menus" onchange="menu_change(0)" class="main-check" id="menuK" checked>한식</p>
+                    <p><input type="radio" name="menus" onchange="menu_change(1)" class="main-check" id="menuY" >양식/아시안</p>
+                    <p><input type="radio" name="menus" onchange="menu_change(2)" class="main-check" id="menuJ" >일식</p>
+                </div>
+                <div class="main-option">
+                    <p><input type="radio" name="menus" onchange="menu_change(3)" class="main-check" id="menuC" >중식</p>
+                    <p><input type="radio" name="menus" onchange="menu_change(4)" class="main-check" id="menuT" >분식</p>
+                    <p><input type="radio" name="menus" onchange="menu_change(5)" class="main-check" id="menuB" >고기류</p>
+                </div>
+                <div class="main-option">
+                    <p><input type="radio" name="menus" onchange="menu_change(6)" class="main-check" id="menuG" >간편식</p>
+                </div>
+            </div>
+            <a class="main-goDown" name="main-goDown" href="#main__restorant">
+                <div class="down-text">근처 식당 보러 가기</div>
+                <i class="fas fa-angle-double-down fa-1x"></i>
+            </a>
+        </div>
+    </section>
+    <!-- 음식 추천 결과에 따른 음식점 보여주기 -->
+    <section class="main__restorant" id="main__restorant">
+        <div class="map-box" id="map-box"></div>
+    </section>
+    <script src="./src/map.js"></script>
+    <script src="./src/all_map.js"></script>
+</body>
+</html>

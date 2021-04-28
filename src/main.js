@@ -1,4 +1,4 @@
-document.write("<script src='map.js'></script>");
+// document.write("<script src='map.js'></script>");
 // document.write("<script src='data.js'></script>");
 
 let pos_count=3;

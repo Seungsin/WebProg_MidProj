@@ -26,6 +26,13 @@ header{
     z-index:100;
 }
 
+.go-top-btn>a{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    color:rgba(165, 165, 165, 0.589);
+}
+
 .main__header-wrapper{
     display: flex;
     justify-content: space-between;
@@ -37,32 +44,8 @@ header{
     width: 90px;
 }
 
-.header-left{
-    display: flex;
-    align-items: center;
-}
-
-.header-left>a{
-    margin-left: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.header-left>div{
-    margin-left: 10px;
-    height: 20px;
-}
-
 .header-KNU-logo{
     width: 50px;
-}
-
-.go-top-btn>a{
-    position:fixed;
-    bottom: 20px;
-    right: 20px;
-    color:rgba(165, 165, 165, 0.589);
-    z-index: 100;
 }
 
 .main__main{
@@ -97,62 +80,55 @@ header{
     width: 150px;
 }
 
-.main-menu{
-    display: flex;
-    font-size: 24px;
+.food-potos{
+    width: 100%;
+    display: none;
 }
 
-.main-text-blank{
+.food-potos>img{
     width: 100px;
-    border-radius: 5px;
-    background: #FFC0C0;
-    margin:0 5px;
-    text-align: center;
+    height: 100px;
+    margin:7% 2%;
+}
+.rice-des{
+    font-size:8px;
 }
 
-.main-rand-btn{
+.main-ricelogo:hover + .food-potos{
+    display: flex;
+    justify-content: center;
+}
+.main-ricelogo:hover{
+    display: none;
+}
+
+.main-t{
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.main-buttons{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin:30px 0;
+}
+
+.main-btn{
     outline: 0;
     background: none;
     border: none;
     margin-top:15px;
-    width: 140px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
     border-radius: 15px;
     background-color: white;
     cursor: pointer;
 }
 
-.main-setting{
-    outline: 0;
-    background: none;
-    border: none;
-    margin-top:15px;
-    width: 140px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: white;
-    cursor: pointer;
-}
-
-.main-options{
-    visibility:hidden;
-    margin-top:10px;
-    height: 13%;
-    width: 650px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    padding:5px 0;
-}
-
-.main-option{
-    line-height: 25px;
-    width: 100px;
-}
-
-.main-check{
-    margin-right: 5px;
+a{
+    text-decoration: none;
 }
 
 .verticalLine{
@@ -171,30 +147,15 @@ header{
     margin-bottom: 5px;
 }
 
-.main__restorant{
+.main-des{
     background: rgba(255, 192, 192, 0.5);
     margin:2%;
     border-radius: 20px;
+    text-align: center;
+    padding:30px;
+    line-height: 30px;
 }
 
-.map-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* padding-bottom: 10px; */
-}
-
-.map{
-    border-radius: 10px;
-}
-
-.map-content-box{
-    width:45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.map-content-box>p{
-    padding:5px 0;
+.main-des>h3{
+    margin:15px 0 5px 0;
 }
