@@ -1,4 +1,4 @@
-# 고급웹프로그래밍(2020-01) 개인과제
+# 고급웹프로그래밍 (2020-01) 개인과제
 ## 오늘 뭐 먹지?(경북대학교ver.)
 
 ### URL
@@ -31,4 +31,5 @@ https://seungsin.github.io/WebProg_MidProj/
 3. show_map.html
 - 메뉴 추천을 받지 않고, 문 근처의 식당을 알고자 하는 사람들이 사용 할 수 있는 페이지.
 - 옵션은 복수 선택이 불가능함.
+- 카카오맵 API를 이용하여 근처 식당의 지도를 보여줌.
 ![image](https://user-images.githubusercontent.com/62578738/116711356-ba30f700-aa0d-11eb-9cf6-3a29b075f82e.png)
